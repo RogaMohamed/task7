@@ -7,7 +7,7 @@ li {
     list-style: none;
 }
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 :root {
     --color-default: #364d59;
@@ -132,6 +132,9 @@ div .btn {
     justify-content: center;
     margin-left: 30%;
 }
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+}
 /* Constructions */
  .Constructions {
     display: flex;
@@ -192,6 +195,12 @@ div .btn {
     gap: 10px;
     margin: 0 5%;
     padding: 0 20px;
+    padding-top: 20px;
+}
+.card_s{
+    border: none !important;
+    background: #fff;
+    padding: 20px;
 }
 .card-title-service{
     padding-bottom: 8px;
@@ -202,7 +211,7 @@ div .btn {
     border-bottom: 0.4rem solid #feb900;
     transition: 0.3s;
 }
-.card .icon {
+.card_s .icon {
     color: var(--color-secondary);
     font-weight: bolder;
     font-size: 50px;
@@ -256,7 +265,7 @@ div .btn {
     color: #fff;
     transition: 0.3s;
 }
-.enim_item i:hover.enim_item h6 {
+.enim_item a:hover.enim_item h6 {
     color: #feb900;
     transition: 0.3s;
 }
@@ -274,10 +283,50 @@ div .btn {
 .voluptatem__container {
     background: #f5f6f7;
 }
+.tab-content {
+    background: #f5f6f7;
+}
 .Volu_item {
-    width: 40%;
-    margin: 5%;
+    width: 37%;
+    margin: 5% 0 0 5%;
+}
+.Volu_item h2 {
+    font-weight: bolder;
+    color: #52565e;
+    padding-bottom: 15px;
+}
+.Volu_item i {
+    color: #feb900;
 }
 .volu_image {
-    width: 30%;
+    width: 70%;
+    height: 70%;
 }
+.volu_image img {
+    padding: 10%;
+}
+/* our_project */
+.our_project {
+    text-align: center;
+}
+.our_project_heading h2{
+    font-weight: bolder;
+    color: #52565e;
+    padding-top: 5%;
+}
+.our_project-p {
+    color: var(--color-default);
+    padding: 0 25%;
+
+}
+.our_project_list a {
+    color: var(--color-default);
+    padding-top: 5%;
+    font-size: larger;
+    transition: 0.5s;
+}    
+.our_project_list a:hover {
+    color: #feb900;
+    transition: 0.5s;
+}
+
