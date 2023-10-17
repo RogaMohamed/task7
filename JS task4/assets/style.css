@@ -33,6 +33,25 @@
     border-radius: 0.5rem;
     cursor: pointer;
 }
-.alertBox {
+.alert-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+    background: #FFC7EA;
+    color: #c81a83;
     display: none;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    background-color: #CAEDFF;
+}
+.alert-el {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
